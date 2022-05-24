@@ -11,4 +11,4 @@ WORKDIR /home/ansible
 
 USER ansible
 
-RUN pip install ansible jmespath && ansible-galaxy install geerlingguy.docker geerlingguy.pip && ansible-galaxy collection install community.docker
+RUN pip install ansible jmespath && ansible-galaxy install geerlingguy.docker geerlingguy.pip jnv.unattended-upgrades && ansible-galaxy collection install community.docker
